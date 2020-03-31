@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Calculadora de IMC</h2>
+
+            <div class="inside-box">
+                <div class="text-box">
+                    <label>Sexo:</label>
+                    <select id="sexo">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                    </select>
+                </div>
+
+                <div class="text-box">
+                    <label>Altura (m):</label>
+                    <input value="" id="altura" placeholder="Ex.: 1,80" type="number">
+                </div>
+                <div class="text-box">
+                    <label>Peso (kg):</label>
+                    <input id="peso" placeholder="Ex.: 79" type="number">
+                </div>
+            </div>
+            <button id="limpar">limpar</button>
+            <h6 id="erro"></h6>
+        </div>
+
+
+        <div class="box">
+            <h2 id="resultado">Seu resultado: IMC 0.0</h2>
+            <h3 id="categoria"></h3>
+            <table class="imc-table">
+                <thead>
+                    <th>IMC</th>
+                    <th>Mulher</th>
+                    <th>Homem</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Abaixo do peso</td>
+                        <td>abaixo de 19</td>
+                        <td>abaixo de 20</td>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td>19 a 23,9</td>
+                        <td>20 a 24,9</td>
+                    </tr>
+                    <tr>
+                        <td>Obesidade leve</td>
+                        <td>24 a 28,9</td>
+                        <td>25 a 29,9</td>
+                    </tr>
+                    <tr>
+                        <td>Obesidade moderada</td>
+                        <td>29 a 38,9</td>
+                        <td>30 a 39,9</td>
+                    </tr>
+                    <tr>
+                        <td>Obesidade mórbita</td>
+                        <td>acima de 39</td>
+                        <td>acima de 40</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>
