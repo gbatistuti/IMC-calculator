@@ -4,7 +4,6 @@ const sexo = document.querySelector('#sexo')
 const limpar = document.querySelector('#limpar')
 
 let rowIndex = null
-let cellIndex = sexo.value === 'M' ? 1 : 2
 
 limpar.addEventListener('click', limparCampos)
 
